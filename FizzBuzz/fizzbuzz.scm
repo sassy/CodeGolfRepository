@@ -1,0 +1,2 @@
+(let ()
+  (define(f i)(if(> i 100)'()(cons i(f (+ i 1)))))(define (a i j)(zero? (modulo i j)))(map(lambda(x)(print x))(map(lambda(x)(cond((a x 15) "FizzBuzz")((a x 3)"Fizz")((a x 5)"Buzz")(else x)))(f 1))))
